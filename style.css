@@ -89,6 +89,13 @@ html{
 	color: skyblue;
 	font-weight: 500;
 }
+.home .home-content .icons a{
+	background: none;
+	border: none;
+	font-size: 35px;
+	padding-left: 0;
+}
+
 .home .home-content a{
 	display: inline-block;
 	background: skyblue;
@@ -157,17 +164,6 @@ section .title::before{
 	background: black;
 	transform: translateX(-50%);
 }
-section .title::after{
-	content: "";
-	position: absolute;
-	bottom: -10px;
-	left: 50%;
-	font-size: 20px;
-	background: white;
-	color: skyblue;
-	padding: 5px;
-	transform: translateX(-50%);
-}
 .about, .services, .skills, .teams, .contact, footer{
 	font-family: 'Roboto', sans-serif;
 }
@@ -229,16 +225,16 @@ section .title::after{
 
 /*--sessao servicos--*/
 .services, .teams{
-	background: black;
+	background: black;				/*Cor de fundo das sessoes pretas*/
 	color: white;
 }
 .services .title::before,
-.teams .title: :before{
+.teams .title::before{
 	background: white;
 }
 .services .title::after,
 .teams .title::after{
-	background: black;
+	background: none;
 }
 .services .serv-content .card{
 	width: calc(33% - 20px);
